@@ -1,0 +1,18 @@
+import java.util.Scanner;
+import java.util.concurrent.atomic.AtomicInteger;
+
+public class HRT9_JavaEndOfFile {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        for (int i = 1; scanner.hasNext(); i++) {
+            System.out.printf("%d %s\n", i, scanner.nextLine());
+        }
+    }
+}
+/*The challenge here is to read  lines of input until you reach EOF, then number and print all  lines of content.
+Hint: Java's Scanner.hasNext() method is helpful for this problem.
+Input Format:
+Read some unknown  lines of input from stdin(System.in) until you reach EOF; each line of input contains a non-empty String.
+Output Format:
+For each line, print the line number, followed by a single space, and then the line content received as input.*/
