@@ -2,7 +2,7 @@ import java.math.BigInteger;
 import java.security.*;
 import java.util.Scanner;
 
-public class HRT15_JavaMD5 {
+public class HRT2_JavaMD5 {
     public static void main(String[] args) throws NoSuchAlgorithmException {
         Scanner scanner = new Scanner(System.in);
 
