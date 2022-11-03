@@ -27,7 +27,7 @@ class MyMath {
     }
 }
 
-public class HRT14_JavaLambdaExpressions {
+public class HRT1_JavaLambdaExpressions {
 
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
