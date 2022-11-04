@@ -3,9 +3,10 @@ import java.util.*;
 public class HRT9_JavaSort {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        int testCases = Integer.parseInt(scanner.nextLine());
 
+        int testCases = Integer.parseInt(scanner.nextLine());
         List<Student> studentList = new ArrayList<Student>();
+
         while (testCases > 0) {
             int id = scanner.nextInt();
             String name = scanner.next();
@@ -47,12 +48,12 @@ class Student implements Comparable<Student> {
     }
 
     @Override
-    public int compareTo(Student anotherStudent) {
+    public int compareTo(Student nextStudent) {
         return Comparator.comparingDouble(Student::getCgpa)
                 .reversed()
                 .thenComparing(Student::getName)
                 .thenComparingInt(Student::getId)
-                .compare(this, anotherStudent);
+                .compare(this, nextStudent);
     }
 }
 /*You are given a list of student information: ID, FirstName, and CGPA. Your task is to rearrange them according to
