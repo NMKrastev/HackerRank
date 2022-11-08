@@ -22,7 +22,6 @@ public class HRT13_JavaBitSet {
             firstArg = scanner.nextInt();
             secondArg = scanner.nextInt();
 
-            // for each operation define case
             switch (operation) {
                 case "AND":
                     bitSets[firstArg - 1].and(bitSets[secondArg - 1]);
