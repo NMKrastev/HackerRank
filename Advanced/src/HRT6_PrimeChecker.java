@@ -12,10 +12,10 @@ import java.util.Set;
 class Prime {
     public void checkPrime(Integer... args) {
 
-        for (Integer n : args) {
-            final BigInteger bi = new BigInteger(String.valueOf(n));
-            if (bi.isProbablePrime(1))
-                System.out.print(String.format("%s ", n));
+        for (Integer number : args) {
+            final BigInteger bigInteger = new BigInteger(String.valueOf(number));
+            if (bigInteger.isProbablePrime(1))
+                System.out.print(String.format("%s ", number));
 
         }
         System.out.println();
